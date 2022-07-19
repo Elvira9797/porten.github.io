@@ -1,0 +1,467 @@
+header
+	font-family: 'PT Sans', sans-serif
+
+.header__bar
+	.wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	.vr
+		display: inline
+		height: 10px
+		margin: 10px
+		border-left: 1.5px solid $color-gray
+
+	&--list
+		list-style-type: none
+		display: flex
+		align-items: center
+		font-size: 12px
+		padding-left: 0
+		margin-top: 16px
+		li
+			color: $color-gray
+
+			a
+				color: $color-gray
+				text-decoration: none
+				i
+					margin-right: 16px
+
+	&--entrance
+		div
+			display: inline
+			color: $color-gray
+		button
+			color: $color-gray
+			font-size: 12px
+			padding: 0
+			i
+				margin-right: 12px
+
+.header__nav
+	background: $color-brown
+	.wrapper
+		padding: 30px 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.dropdown
+			display: none
+		div
+			display: flex
+		nav
+			a 
+				text-decoration: none
+				color: $color-gray
+				text-transform: uppercase
+				padding: 35px 20px 34px 20px
+				font-size: 14px
+				transition: 0.2s
+				&.active, &:hover
+					background: #1F1F1F
+					color: $colorWhite
+		button
+			margin-left: 20px
+
+.first__screen
+	min-height: 90vh
+	background-image: url(../images/firstScreen.png)
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	justify-content: center
+	color: #fff
+	&--inf
+		margin: 0 auto
+		display: inline-block
+		border: 4px solid $colorWhite
+		padding: 80px 50px
+	&--img
+		display: block
+		margin: 0 auto
+		margin-bottom: 8px
+	span
+		display: block
+		text-align: center
+		border-top: 2px solid $colorWhite
+		text-transform: uppercase	
+		padding-top: 4px
+	p
+		text-transform: uppercase
+		width: 730px
+		text-align: center
+		font-weight: 300
+		margin-top: 70px
+		align-self: center
+		
+
+// -------------gallery--------------
+.titleForGallery
+	font-size: 28px
+	text-transform: uppercase
+	color: $colorWhite
+	font-family: 'Playfair Display', serif
+
+.gallery
+
+	.carousel
+		display: none
+	display: flex
+	// justify-content: space-between
+	&__collection
+		width: 55%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		h2
+			span
+				font-size: 24px
+		&--image
+			width: 45%
+			height: 600px
+			background-image: url(../images/Rectangle2.png)
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			display: flex
+			align-items: end
+			justify-content: center
+			div
+				display: flex
+				flex-direction: column
+				align-items: center
+				margin-bottom: 80px
+				h2
+					margin-bottom: 0
+				hr
+					margin: 15px 0 20px 0
+	.collection--btn
+		padding: 10px 25px
+		border: 1px solid $colorWhite
+		text-transform: uppercase
+
+	&__collection--items
+		display: flex
+	&__collection--item
+		margin-left: 30px
+		&:nth-child(4n + 1)
+			margin-left: 0
+
+		.clock
+			height: 255px
+			width: 210px
+			background: $dark-gray
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 20px
+			margin-top: 30px
+		span
+			display: block
+			margin-top: 6px
+			color: $colorWhite
+			font-family: 'Playfair Display', serif
+
+	&__collection--image2
+		width: 45%
+		height: 450px
+		background-image: url(../images/Rectangle3.png)
+		background-size: 100% 100%
+		background-repeat: no-repeat
+	.collection--2018
+		width: 55%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		h2
+			margin-top: 50px
+		hr
+			margin-bottom: 25px
+			span
+				font-size: 24px
+		.collection--2018__text
+			width: 450px
+			text-align: center
+			font-size: 14px
+			line-height: 22px
+			font-weight: 400
+			color: $colorWhite
+		.collection--btn
+			margin-top: 40px
+
+// ----------newCollection----------
+
+.newCollection
+	display: flex
+	flex-direction: column
+	justify-content: center 
+	align-items: center
+	.carousel
+		display: none
+	.wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+	h2
+		margin-top: 80px
+		text-align: center
+	&__items
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	.gallery__collection--item
+		margin-top: 10px
+
+// -------ourBrands----------
+
+.ourBrand
+	background: $color-brown
+	padding: 60px 0 70px 0
+	margin-top: 130px
+	.wrapper
+		display: flex
+		flex-direction: column
+	h2
+		text-align: center
+		margin-bottom: 20px
+	hr
+		align-self: center
+	&__logo
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		list-style-type: none
+		padding: 0
+
+
+
+// -----------Footer-----------------
+		
+.footerBg
+	// width: 45%
+	min-height: 350px
+	background-image: url(../images/footerBg.png)
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	font-family: 'PT Sans', sans-serif
+	.wrapper
+		display: flex
+		justify-content: space-between
+	.margin--right
+		margin-right: 30px
+
+	.forMob
+		display: none
+	
+	.footer__title
+		text-transform: uppercase
+		color: $colorWhite
+		font-size: 24px
+		font-family: 'Playfair Display', serif
+		margin: 80px 0 40px 0
+	p
+		font-size: 14px
+		color: $colorWhite
+		width: 300px
+	ul
+		list-style-type: none
+		display: flex
+		flex-wrap: wrap
+		padding-left: 0
+		font-size: 14px
+		// width: 150px
+		li
+			color: $colorWhite
+			background: $color-brown
+			padding: 10px 20px
+			margin-right: 10px
+			margin-bottom: 15px
+
+			a
+				color: $colorWhite
+				text-decoration: none
+
+	form
+		margin-top: 35px
+
+		input
+			outline: none
+			border: 0
+			background: rgba(255, 255, 255, 0.4)
+			padding: 10px 7px 10px 10px
+			font-size: 14px
+
+		input::placeholder
+			color: $colorWhite
+			transition: 0.2s
+
+
+		input:focus::placeholder
+			color: transparent
+
+		button
+			background: $color-brown
+			text-transform: uppercase
+			font-size: 14px
+			padding: 9px 14px 11px 14px
+			margin-left: -5px
+
+.rights
+	display: flex
+	justify-content: space-between
+	padding-top: 30px
+	p
+		color: #D0D0D0
+		font-size: 12px
+
+// ----------media--------------
+
+@media (max-width: 475px)
+
+	.titleForGallery
+		font-size: 24px
+
+	.wrapper
+		width: 90%
+
+	.header__bar
+		display: none
+
+	.header__nav 
+		img
+			width: 60px
+		.wrapper
+			nav
+				display: none
+			.dropdown
+				display: block
+				.dropdown-menu
+					text-align: end
+					background: #191b1c
+					a
+						color: $color-gray
+						&:hover
+							color: $dark-gray
+				.btn
+					background: none
+					border: none
+					box-shadow: none
+					padding: 1px 6px
+					margin-left: 10px
+
+
+	.first__screen
+		min-height: 30vh
+		background-size: 100% 100%
+		justify-content: none
+		margin-bottom: 50px
+		&--inf
+			padding: 25px 20px
+		&--img
+			width: 90px!important
+		span
+			font-size: 10px
+		p
+			display: none
+		
+		
+	.gallery
+		flex-direction: column
+		align-items: center
+		&__collection--items
+			display: none
+		&__collection--item
+			margin-top: 20px
+			.clock2
+				margin: 0 auto
+				margin-bottom: 20px
+
+		.carousel
+			display: block
+			width: 100%
+			span
+				text-align: center
+
+			.carousel-control-prev
+				top: -30px
+				left: -45px
+			.carousel-control-next
+				top: -30px
+				right: -45px
+		&__collection--image
+			margin-top: 30px	
+			width: 100%
+			height: 370px
+			div
+				margin-bottom: 30px
+		&__collection--image2
+			order: 1
+			width: 100%
+			height: 300px
+
+		.collection--2018
+			width: 100%
+			.collection--2018__text
+				width: 320px
+				font-size: 12px
+			.collection--btn
+				margin-top: 0
+				margin-bottom: 50px
+
+	.newCollection
+		flex-direction: column
+		align-items: center
+		hr
+			align-self: center
+		&__items
+			display: none
+		.wrapper
+			align-items: normal
+			.clock
+				margin: 0 auto
+				margin-top: 30px
+				margin-bottom: 20px
+		h2
+			margin-top: 50px
+		.carousel
+			display: block
+			width: 100%
+			span
+				text-align: center
+
+			.carousel-control-prev
+				top: -30px
+				left: 20px
+			.carousel-control-next
+				top: -30px
+				right: 20px
+	.ourBrand
+		margin-top: 50px
+		padding-bottom: 30px
+		&__logo
+			flex-direction: column
+			align-items: center
+			margin-top: 0
+
+
+	.footerBg
+		background-image: none
+		background-color: #191b1c
+		padding: 30px 0
+		.wrapper
+			flex-direction: column
+		.footer__title
+			margin-top: 15px
+			margin-bottom: 25px
+
+		.forMob
+			display: block
+		
+
+			
+
+
